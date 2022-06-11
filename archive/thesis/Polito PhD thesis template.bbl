@@ -1,0 +1,140 @@
+\begin{thebibliography}{10}
+
+\bibitem{ChoudharyAlokK.2009Dmim}
+Alok~K. Choudhary, Jennifer~A. Harding, and Manoj~K. Tiwari.
+\newblock Data mining in manufacturing: a review based on the kind of
+  knowledge.
+\newblock 20(5), 2009.
+
+\bibitem{ZhongRayandXuXunandKlotzEberhardandNewmanStephen}
+Ray Zhong, Xun Xu, Eberhard Klotz, and Stephen Newman.
+\newblock Intelligent manufacturing in the context of industry 4.0: A review.
+\newblock {\em Engineering}, 3:616--630, 10 2017.
+
+\bibitem{WollschlaegerMartin2017TFoI}
+Martin Wollschlaeger, Thilo Sauter, and Juergen Jasperneite.
+\newblock The future of industrial communication: Automation networks in the
+  era of the internet of things and industry 4.0.
+\newblock {\em IEEE industrial electronics magazine}, 11(1):17--27, 2017.
+
+\bibitem{LeeJay2015ACSa}
+Jay Lee, Behrad Bagheri, and Hung-An Kao.
+\newblock A cyber-physical systems architecture for industry 4.0-based
+  manufacturing systems.
+\newblock {\em Manufacturing letters}, 3:18--23, 2015.
+
+\bibitem{NegriElisa2017ARot}
+Elisa Negri, Luca Fumagalli, and Marco Macchi.
+\newblock A review of the roles of digital twin in cps-based production
+  systems.
+\newblock {\em Procedia manufacturing}, 11:939--948, 2017.
+
+\bibitem{XindongWu2014Dmwb}
+Xindong Wu, Xingquan Zhu, Gong-Qing Wu, and Wei Ding.
+\newblock Data mining with big data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  26(1):97--107, 2014.
+
+\bibitem{VanDerAalstWil2012Pmm}
+Wil Van Der~Aalst, Arya Adriansyah, Ana Karla~Alves De~Medeiros, Franco
+  Arcieri, Thomas Baier, Tobias Blickle, Jagadeesh~Chandra Bose, Peter Van
+  Den~Brand, Ronald Brandtjen, Joos Buijs, Andrea Burattin, Josep Carmona, Malu
+  Castellanos, Jan Claes, Jonathan Cook, Nicola Costantini, Francisco Curbera,
+  Ernesto Damiani, Massimiliano De~Leoni, and Pavlos Delias.
+\newblock Process mining manifesto.
+\newblock volume~99. Springer, 2012.
+
+\bibitem{Aalst16}
+Wil M.~P. van~der Aalst.
+\newblock {\em Process Mining: Data Science in Action}.
+\newblock Springer, Heidelberg, 2 edition, 2016.
+
+\bibitem{RojasEric2016Pmih}
+Eric Rojas, Jorge Munoz-Gama, Marcos Sepúlveda, and Daniel Capurro.
+\newblock Process mining in healthcare: A literature review.
+\newblock {\em Journal of biomedical informatics}, 61(C):224--236, 2016.
+
+\bibitem{LugaresiG.2019MsmG}
+G.~Lugaresi, M.~Zanotti, D.~Tarasconi, and A.~Matta.
+\newblock Manufacturing systems mining: Generation of real-time discrete event
+  simulation models.
+\newblock volume 2019-, pages 415--420. Institute of Electrical and Electronics
+  Engineers Inc., 2019.
+
+\bibitem{ErMahendrawathiandArsadNovalandAstutiH.M.andPradinaRennyandUtamiRivia}
+Mahendrawathi Er, Noval Arsad, H.M. Astuti, Renny Pradina, and Rivia Utami.
+\newblock Analysis of production planning in a global manufacturing company
+  with process mining.
+\newblock {\em Journal of Enterprise Information Management}, 31:00--00, 01
+  2018.
+
+\bibitem{ParkMinjeongandSongMinseokandBaekTaeandSonSookyoungandHaSeungandChoSung}
+Minjeong Park, Minseok Song, Tae Baek, Sookyoung Son, Seung Ha, and Sung Cho.
+\newblock Workload and delay analysis in manufacturing process using process
+  mining.
+\newblock pages 138--151, 06 2015.
+
+\bibitem{6900341}
+A.~{Burattin}, A.~{Sperduti}, and W.~M.~P. {van der Aalst}.
+\newblock Control-flow discovery from event streams.
+\newblock In {\em 2014 IEEE Congress on Evolutionary Computation (CEC)}, pages
+  2420--2427, July 2014.
+
+\bibitem{7376771}
+M.~{Hassani}, S.~{Siccha}, F.~{Richter}, and T.~{Seidl}.
+\newblock Efficient process discovery from event streams using sequential
+  pattern mining.
+\newblock In {\em 2015 IEEE Symposium Series on Computational Intelligence},
+  pages 1366--1373, Dec 2015.
+
+\bibitem{DennoPeterandDickersonCharlesandHardingJennifer}
+Peter Denno, Charles Dickerson, and Jennifer Harding.
+\newblock Dynamic production system identification for smart manufacturing
+  systems.
+\newblock {\em Journal of Manufacturing Systems}, 48, 05 2018.
+
+\bibitem{BoseR.P.JagadeeshChandra2013Wipm}
+R.~P. Jagadeesh~Chandra Bose, Ronny~S Mans, and Wil M.~P van Der~Aalst.
+\newblock Wanna improve process mining results?
+\newblock In {\em 2013 IEEE Symposium on Computational Intelligence and Data
+  Mining (CIDM)}, pages 127--134. IEEE, 2013.
+
+\bibitem{Romero-SilvaRodrigo2019Splp}
+Rodrigo Romero-Silva, Erika Marsillac, Sabry Shaaban, and Margarita
+  Hurtado-Hernández.
+\newblock Serial production line performance under random variation: Dealing
+  with the ‘law of variability’.
+\newblock {\em Journal of manufacturing systems}, 50:278--289, 2019.
+
+\bibitem{ASchutze2018S4s}
+A.~Schütze, N.~Helwig, and T.~Schneider.
+\newblock Sensors 4.0 – smart sensors and measurement technology enable
+  industry 4.0.
+\newblock {\em Journal of sensors and sensor systems}, 7(1):359--371, 2018.
+
+\bibitem{BoseR.P.J.C.2011Hcdi}
+R.P.J.C. Bose, W.M.P. Van Der~Aalst, I.~Žliobaite, and M.~Pechenizkiy.
+\newblock Handling concept drift in process mining.
+\newblock volume 6741, pages 391--405, 2011.
+
+\bibitem{simmer}
+I{\~n}aki Ucar, Bart Smeets, and Arturo Azcorra.
+\newblock {simmer}: Discrete-event simulation for {R}.
+\newblock {\em Journal of Statistical Software}, 90(2):1--30, 2019.
+
+\bibitem{tidyverse}
+Hadley Wickham, Mara Averick, Jennifer Bryan, Winston Chang, Lucy~D'Agostino
+  McGowan, Romain François, Garrett Grolemund, Alex Hayes, Lionel Henry, Jim
+  Hester, Max Kuhn, Thomas~Lin Pedersen, Evan Miller, Stephan~Milton Bache,
+  Kirill Müller, Jeroen Ooms, David Robinson, Dana~Paige Seidel, Vitalie
+  Spinu, Kohske Takahashi, Davis Vaughan, Claus Wilke, Kara Woo, and Hiroaki
+  Yutani.
+\newblock Welcome to the {tidyverse}.
+\newblock {\em Journal of Open Source Software}, 4(43):1686, 2019.
+
+\bibitem{Rlanguage}
+{R Core Team}.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2020.
+
+\end{thebibliography}

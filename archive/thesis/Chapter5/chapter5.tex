@@ -1,0 +1,131 @@
+\chapter{Simulated systems}
+\label{chapter 5}
+
+\ifpdf
+    \graphicspath{{Chapter5/Figs/}{Chapter5/Figs/PDF/}{Chapter5/Figs/}}
+\else
+    \graphicspath{{Chapter5/Figs/Vector/}{Chapter5/Figs/}}
+\fi
+To observe the indicator behaviors, simulations are built to replicate a SSL having the characteristics described in section \ref{Considered systems}. Virtual sensors have been placed accordingly to the three sensor configuration shown in section \ref{Considered sensor positions}. The sensor output is an event log having the field structure defined in chapter \ref{chapter 4}.\\
+Concerning the software tools: 
+\begin{itemize}
+\item Models are written and run with \textit{simmer} \cite{simmer}, a process-oriented discrete-event simulator.
+\item Event logs transformation in case lists and KPI extractions are executed with queries mostly written with \textit{dplyr}, \textit{tidyr} and other libraries belonging to the \textit{tidyverse} collection \cite{tidyverse}.
+\item Plots are printed using \textit{ggplot2}, which is also part of the \textit{tidyverse} collection.
+\end{itemize}
+\textit{simmer} and \textit{tidyverse} are open-source packages for \textbf{\textsf{R}} language \cite{Rlanguage}.
+\section{Simulated line}
+The model is designed to simulate a simple serial line having 7 stages. Each stage is composed by a resource fed by a buffer. The first buffer is supplied by a source set up to generate 10000 jobs; job inter-arrival time (i.e. inter-generation time) follows an exponential distribution with pdf
+\begin{equation}
+f(x;\lambda)=\begin{cases}
+\lambda e^{-\lambda x}~,& \text{if}~ x\geq 0\\
+0~, & \text{otherwise.}
+\end{cases}
+\end{equation}
+having fixed parameter $\lambda=10^{-1}$. In this way, the expected value of the inter-arrival time is $\mu_{a}=10$ time units. The simulation stops when the last job has been processed by the resource in the last stage.\\ 
+Job processing time in the resources follows a log-normal distribution with pdf
+\begin{equation}
+f(x;\mu,\sigma^2)=e^{\mu+\sigma Z(x;\mu,\sigma^2)}
+\end{equation}
+where $Z(x;\mu,\sigma^2)$ is the pdf of a normal distribution with mean $\mu$ and variance $\sigma^2$. The standard deviation of the log-normal distribution is set to $\sigma_s=5$ time units in every stage $s$; the initial mean is set to $\mu_s'=7$ time units in every stage, except for the resource in the bottleneck stage $s_{BN}$, where the initial mean processing time is set to $\mu_s'=8.5$.\\
+During the simulation run, a variation takes place in the line, to observe how indicators behave when it occurs. The variation is realized by forcing a process parameter to suddenly change in the instant when half of the jobs (i.e. the 5000 jobs) have been processed by the first stage resource. The changing stage position $s_{CH}$ is chosen in order to have a wide view of the variation effects both upstream and downstream in the line; the change trigger was set to be sure that system was in steady state before the variation and to let it to reach the steady state again after.
+\subsection{Experimental factors and levels}
+In this section the experimental factors and the respective levels are presented. 
+\begin{itemize}
+\item \textbf{Bottleneck and changing stage positions} Bottleneck and changing stage positions in a model depend on each other. Three stage configurations are considered to observe KPIs in different situations, that are 
+\begin{enumerate}
+\item Bottleneck stage $s_{BN}$ is upstream the changing stage $s_{CH}$
+\item Bottleneck stage $s_{BN}$ is in correspondence with the changing stage $s_{CH}$
+\item Bottleneck stage $s_{BN}$ is downstream the changing stage $s_{CH}$
+\end{enumerate}
+So, the stage configuration pairs are
+\[(s_{BN},s_{CH})\in\{(3,5),(4,4),(5,3)\}\]
+\item \textbf{Initial buffer capacities} In each model, capacity limit $cl_s$ of stage $s$ buffer has the same initial value $cl_s'$ in all stages. Four initial buffer capacity levels are considered 
+\begin{enumerate}
+\item Buffer capacity limit equal to 3 jobs: in this configurations buffers are small and easily saturated
+\item Buffer capacity limit equal to 6 jobs: in this configurations buffers are large and not commonly saturated
+\item Buffer capacity limit equal to 10 jobs: in this configurations buffers are very large and almost never saturated
+\item Unlimited buffers; it is to be noted that models with unlimited buffers have not been taken into account in case of buffer limit variations.
+\end{enumerate}
+Therefore, the before-change considered levels of $cl_s$ are (expressed in job units)
+\[cl_s'\in\{3,6,10,\infty\}\]
+\end{itemize}
+The variation types are classified in two categories, in turn divided in two sub-categories. The considered change sizes depend on bottleneck position or initial buffer capacity of the model. Therefore, for each variation subcategory, different $cl_s$ and $(s_{BN},s_{CH})$ entail different variation levels. 
+\paragraph{Processing time variation}
+This type of variation is realized changing the parameter $\mu_s$ in the processing time distribution of the resource in the changing stage $s_{CH}$. The levels of the after-change value $\mu_{s_{CH}}''$ taken by parameter $\mu_{s_{CH}}$ depend on the bottleneck position in the model. A scheme of mean processing time variations is contained in Table \ref{table: Average processing time variation levels}.
+\subparagraph{Processing time increase} 
+\begin{itemize}
+\item Bottleneck in third stage and variation in fifth stage or vice versa ($(s_{BN},s_{CH})=(3,5)\vee(5,3)$): considered mean processing time after-change values are (expressed in time units)
+\[\mu_{s_{CH}}''\in\{8,9.5,11\}\]
+\item Bottleneck and variation in same stage ($(s_{BN},s_{CH})=(4,4)$): considered mean processing time after-change values are (expressed in time units)
+\[\mu_{s_{CH}}''\in\{9.5,11\}\]
+\end{itemize}
+\subparagraph{Processing time decrease}
+\begin{itemize}
+\item Bottleneck in third stage and variation in fifth stage or vice versa ($(s_{BN},s_{CH})=(3,5)\vee(5,3)$): considered mean processing time after-change values are (expressed in time units)
+\[\mu_{s_{CH}}''\in\{4.5,6\}\]
+\item Bottleneck and variation in same stage ($(s_{BN},s_{CH})=(4,4)$): considered mean processing time after-change values are (expressed in time units)
+\[\mu_{s_{CH}}''\in\{4.5,6,7.5\}\]
+\end{itemize}
+\paragraph{Buffer capacity variation}
+This type of variation is realized changing the capacity limit $cl_s$ of the changing stage $s_{CH}$ buffer. The levels of the after-change capacity buffer $cl_s''$ depend on initial buffer capacity $cl_s'$ present in the model. A scheme of buffer limit variations is contained in Table \ref{table: Buffer capacity variation levels}.
+\subparagraph{Buffer capacity increase}
+\begin{itemize}
+\item Initial buffer capacity equal to 3 jobs ($cl_s'=3$): considered buffer capacity after-change values (expressed in job units) are
+\[cl_{s_{CH}}''\in\{6,10,20\}\]
+\item Initial buffer capacity equal to 6 jobs ($cl_s'=6$): considered buffer capacity after-change values (expressed in job units) are
+\[cl_{s_{CH}}''\in\{10,20\}\]
+\item Initial buffer capacity equal to 10 jobs ($cl_s'=10$): considered buffer capacity after-change values (expressed in job units) are
+\[cl_{s_{CH}}''\in\{20\}\]
+\end{itemize}
+\subparagraph{Buffer capacity decrease}
+\begin{itemize}
+\item Initial buffer capacity equal to 3 jobs ($cl_s'=3$): considered buffer capacity after-change values (expressed in job units) are
+\[cl_{s_{CH}}''\in\{1\}\]
+\item Initial buffer capacity equal to 6 jobs ($cl_s'=6$): considered buffer capacity after-change values (expressed in job units) are
+\[cl_{s_{CH}}''\in\{1,3\}\]
+\item Initial buffer capacity equal to 10 jobs ($cl_s'=10$): considered buffer capacity after-change values (expressed in job units) are
+\[cl_{s_{CH}}''\in\{1,3,6\}\]
+\end{itemize}
+Each factor level combination is used to build a model which is replicated 30 times, in order to assure statistical validity and accuracy in results. Therefore, every model outputs 30 event logs, that are aggregated to calculate the average Timestamp on each combination of Case ID, Activity ID and Position ID. 
+\begin{landscape}
+\begin{table}[p]
+	\caption{Average processing time variation levels}
+	\centering
+	\label{table: Average processing time variation levels}
+	\begin{tabular}{l c c c}
+		\toprule
+		\multirow{2}{*}{} & & \multicolumn{2}{c}{Stage configuration $(s_{BN},s_{CH})$}\\ 
+		\cmidrule{3-4}
+		& & $(4,4)$ & $(3,5)\vee(5,3)$\\ 
+		\midrule
+		Buffer capacity levels $cl_s'$ & & \multicolumn{2}{c}{$\{3,6,10,\infty\}$}\\
+		Average before-change processing time in changing stage $\mu_{s_{CH}}'$ & & $8.5$ & $7$\\
+		\midrule \midrule
+		\multirow{2}{*}{Average after-change processing time in changing stage $\mu_{s_{CH}}''$} & 
+		Increase $\Uparrow$ & $\{9.5,11\}$ & $\{8,9.5,11\}$\\
+		& Decrease $\Downarrow$ & $\{4.5,6,7.5\}$ & $\{4.5,6\}$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[p]
+	\caption{Buffer capacity variation levels}
+	\centering
+	\label{table: Buffer capacity variation levels}
+	\begin{tabular}{l c c c c}
+		\toprule
+		\multirow{2}{*}{} & & \multicolumn{3}{c}{Initial buffer capacity $cl_s'$}\\ 
+		\cmidrule{3-5}
+		& & $3$ & $6$ & $10$\\ 
+		\midrule
+		Stage configuration $(s_{BN},s_{CH})$ & & \multicolumn{3}{c}{$\{(3,5),(4,4),(5,3)\}$}\\
+		\midrule \midrule
+		\multirow{2}{*}{After-change buffer capacity in changing stage $cl_s''$} & 
+		Increase $\Uparrow$ & $\{6,10,20\}$ & $\{10,20\}$ & $\{20\}$\\
+		& Decrease $\Downarrow$ & $\{1\}$ & $\{1,3\}$ & $\{1,3,6\}$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\end{landscape}
+%\section{Rolling windows parameters}
+%\section{Plot structure}

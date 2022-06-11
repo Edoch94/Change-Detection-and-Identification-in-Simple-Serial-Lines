@@ -1,0 +1,85 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Industry 4.0 scheme\relax }}{4}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces KDD in manufacturing \cite {ChoudharyAlokK.2009Dmim}\relax }}{5}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces The three main Process Mining branches, highlighting input and output of each one\relax }}{7}{figure.caption.15}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Model update process: Change Detection}}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Model update process: Change Identification}}{10}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Model update process: Model Modification}}{11}{figure.caption.18}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Event log class diagram}}{15}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A SSL composed of three stages}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Three sensors configuration scheme}}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Change classification on duration\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Change classification on nature\relax }}{24}{figure.caption.26}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Relations between sensors and timestamps}}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Basic KPI computations scheme}}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Waiting time computation scheme}}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Processing time computation scheme}}{32}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Blocking time computation scheme}}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Consecutive cases intervals computations scheme}}{34}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Starving time computation scheme}}{35}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Starving time formula visualization}}{36}{figure.caption.42}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Mid diff RW KPI behavior considering different processing time increase levels}}{47}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Mid diff RW KPI variation delays considering different buffer capacity limits}}{49}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Different CCI RW KPIs behaviors compared}}{50}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Processing time RW KPI behavior considering different processing time increase levels}}{51}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Processing time RW KPI behavior with different processing time decrease levels}}{53}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Utilization KPI behavior with different processing time increase levels}}{54}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Blocking time RW KPI behavior with different processing time increase levels}}{56}{figure.caption.72}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Starving time RW KPI behavior with different processing time increase levels}}{57}{figure.caption.73}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Blocking time and Starving time KPI behaviors with different processing time decrease levels}}{60}{figure.caption.74}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Blocking time and Starving time RW KPIs behaviors in case of processing time increase considering different buffer capacity limits}}{61}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Value $I_s$ behavior with different processing time increase levels}}{62}{figure.caption.78}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Average Blocking time and Starving time relative proportions considering different buffer capacity limits}}{63}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Blocking prob and Starving prob KPI behaviors with different processing time increase levels}}{64}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Waiting time RW KPI behavior with different processing time increase levels}}{65}{figure.caption.83}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Average Queue KPI behavior with different processing time increase levels}}{67}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Average Waiting time KPI behavior with different processing time increase levels considering different buffer capacity limits}}{69}{figure.caption.87}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Average Waiting time KPI behavior with different processing time increase levels considering buffers with unlimited capacity}}{70}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Waiting time RW and Average Queue KPIs behaviors with different processing time decrease levels}}{71}{figure.caption.90}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Waiting time RW and Average Queue KPIs behaviors with different processing time increase levels that make the system unstable}}{72}{figure.caption.92}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Waiting time RW KPI behavior with different buffer capacity increase levels}}{74}{figure.caption.94}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Waiting time RW KPI behavior with different initial buffer capacity levels}}{75}{figure.caption.96}%
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Waiting time RW KPI behavior with different buffer capacity decrease levels}}{76}{figure.caption.98}%
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Waiting time RW KPI behavior with different buffer capacity variation levels and high before-change buffer capacity limits}}{77}{figure.caption.100}%
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Blocking time RW KPI behavior with different buffer capacity increase levels}}{79}{figure.caption.102}%
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Starving time RW KPI behavior with different buffer capacity decrease levels}}{80}{figure.caption.103}%
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Blocking time and Starving time RW KPIs behaviors with different initial buffer capacity levels}}{81}{figure.caption.105}%
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Blocking time and Starving time RW KPIs behaviors with different buffer capacity decrease levels}}{83}{figure.caption.107}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Example of scheme displaying the variation effects on a KPI in a certain stage\relax }}{86}{figure.caption.110}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Processing time increase effects on Consecutive Cases Intervals KPIs\relax }}{89}{figure.caption.113}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Processing time decrease effects on Consecutive Cases Intervals KPIs\relax }}{89}{figure.caption.114}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Processing time increase effects on Processing time KPI\relax }}{91}{figure.caption.117}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Processing time decrease effects on Processing time KPI\relax }}{91}{figure.caption.118}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Processing time increase effects on Utilization KPI\relax }}{92}{figure.caption.119}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Processing time decrease effects on Utilization KPI\relax }}{92}{figure.caption.120}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Processing time increase effects on Waiting time KPI\relax }}{95}{figure.caption.123}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Processing time decrease effects on Waiting time KPI\relax }}{95}{figure.caption.124}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Processing time increase effects on Average Queue KPI\relax }}{96}{figure.caption.125}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Processing time decrease effects on Average Queue KPI\relax }}{96}{figure.caption.126}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Processing time increase effects on Blocking time KPI\relax }}{99}{figure.caption.129}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Processing time decrease effects on Blocking time KPI\relax }}{99}{figure.caption.130}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Processing time increase effects on Blocking probability KPI\relax }}{100}{figure.caption.131}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Processing time decrease effects on Blocking probability KPI\relax }}{100}{figure.caption.132}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Processing time increase effects on Starving time KPI\relax }}{103}{figure.caption.135}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Processing time decrease effects on Starving time KPI\relax }}{103}{figure.caption.136}%
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Processing time increase effects on Starving probability KPI\relax }}{104}{figure.caption.137}%
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Processing time decrease effects on Starving probability KPI\relax }}{104}{figure.caption.138}%
+\contentsline {figure}{\numberline {7.20}{\ignorespaces Buffer capacity increase effects on Waiting time KPI\relax }}{107}{figure.caption.141}%
+\contentsline {figure}{\numberline {7.21}{\ignorespaces Buffer capacity decrease effects on Waiting time KPI\relax }}{107}{figure.caption.142}%
+\contentsline {figure}{\numberline {7.22}{\ignorespaces Buffer capacity increase effects on Average Queue KPI\relax }}{108}{figure.caption.143}%
+\contentsline {figure}{\numberline {7.23}{\ignorespaces Buffer capacity decrease effects on Average Queue KPI\relax }}{108}{figure.caption.144}%
+\contentsline {figure}{\numberline {7.24}{\ignorespaces Buffer capacity increase effects on Blocking time KPI\relax }}{111}{figure.caption.147}%
+\contentsline {figure}{\numberline {7.25}{\ignorespaces Buffer capacity decrease effects on Blocking time KPI\relax }}{111}{figure.caption.148}%
+\contentsline {figure}{\numberline {7.26}{\ignorespaces Buffer capacity increase effects on Blocking prob KPI\relax }}{112}{figure.caption.149}%
+\contentsline {figure}{\numberline {7.27}{\ignorespaces Buffer capacity decrease effects on Blocking prob KPI\relax }}{112}{figure.caption.150}%
+\contentsline {figure}{\numberline {7.28}{\ignorespaces Buffer capacity increase effects on Starving time KPI\relax }}{115}{figure.caption.153}%
+\contentsline {figure}{\numberline {7.29}{\ignorespaces Buffer capacity decrease effects on Starving time KPI\relax }}{115}{figure.caption.154}%
+\contentsline {figure}{\numberline {7.30}{\ignorespaces Buffer capacity increase effects on Starving prob KPI\relax }}{116}{figure.caption.155}%
+\contentsline {figure}{\numberline {7.31}{\ignorespaces Buffer capacity decrease effects on Starving prob KPI\relax }}{116}{figure.caption.156}%
+\addvspace {10\p@ }
